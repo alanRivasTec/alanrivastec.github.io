@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Elementos de Formularios HTML</h1>
+    </header>
+    <nav style="text-align: center;">
+        <br>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;input&gt;</h2>
+            <pre>   
+                Uno de los elementos de formulario más utilizados es el elemento. &lt;input&gt;
+
+                El elemento se puede mostrar de varias maneras, dependiendo del atributo.&lt;input&gt;type
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &gt;form action="prueba.html"&gt;
+                                &gt;label for="fname"&gt;Edad:&gt;/label&gt;&gt;br&gt;
+                                &gt;input type="number" id="fname" name="fname"&gt;&gt;br&gt;&gt;br&gt;
+                                &gt;input type="submit" value="Enviar"&gt;
+                            &gt;/form&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <form action="prueba.html">
+                            <label for="fname">Edad:</label><br>
+                            <input type="number" id="fname" name="fname"><br><br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;select&gt;</h2>
+            <pre>
+                El elemento define una lista desplegable:&lt;select&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;form action="prueba.html"&gt;
+                                &lt;label for="carros"&gt;Elige una marca de carro:&lt;/label&gt;
+                                &lt;select id="carros" name="carros"&gt;
+                                &lt;option value="Ford"&gt;Ford&lt;/option&gt;
+                                &lt;option value="GMC"&gt;GMC&lt;/option&gt;
+                                &lt;option value="Honda"&gt;Honda&lt;/option&gt;
+                                &lt;option value="Kia"&gt;Kia&lt;/option&gt;
+                                &lt;/select&gt;
+                                &lt;input type="submit"&gt;
+                            &lt;/form>
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <form action="prueba.html">
+                            <label for="carros">Elige una marca de carro:</label>
+                            <select id="carros" name="carros">
+                                <option value="Ford">Ford</option>
+                                <option value="GMC">GMC</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Kia">Kia</option>
+                            </select>
+                            <input type="submit">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;button&gt; </h2>
+            <pre>
+                El elemento define un botón:&lt;button&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;button type="button" onclick="alert('Mucho gusto')"&gt;Haz click en mi!&lt;/button&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <button type="button" onclick="alert('Mucho gusto')">Haz click en mi!</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;datalist&gt;</h2>
+            <pre>
+                El elemento especifica una lista de opciones predefinidas para un elemento.&lt;datalist&gt;&lt;input&gt;
+
+                Los usuarios verán una lista desplegable de las opciones predefinidas a medida que 
+                ingresan datos.
+                    
+                El atributo del elemento, debe referirse al atributo del elemento.list&lt;input&gt;id&lt;datalist&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;form action="prueba.html"&gt;
+                                &lt;input list="Lenguajes"&gt;
+                                &lt;datalist id="Lenguajes"&gt;
+                                    &lt;option value="Java"&gt;
+                                    &lt;option value="HTML"&gt;
+                                    &lt;option value="C"&gt;
+                                    &lt;option value="Python"&gt;
+                                    &lt;option value="CSS"&gt;
+                                &lt;/datalist&gt;
+                            &lt;/form&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <form action="prueba.html">
+                            <input list="Lenguajes">
+                            <datalist id="Lenguajes">
+                                <option value="Java">
+                                <option value="HTML">
+                                <option value="C">
+                                <option value="Python">
+                                <option value="CSS">
+                            </datalist>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <br>
+    <a href="../Formularios.html">Regresar</a>
+</body>
+</html>

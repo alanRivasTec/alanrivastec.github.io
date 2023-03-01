@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Enlaces HTML</h1>
+    </header>
+    <nav style="text-align: center;">
+        <pre>
+            Los enlaces se encuentran en casi todas las páginas web. Los vínculos permiten a 
+            los usuarios hacer clic de una página a otra.
+            
+            Los enlaces HTML son hipervínculos.
+            
+            Puede hacer clic en un enlace y saltar a otro documento.
+            Cuando mueva el mouse sobre un enlace, la flecha del mouse se convertirá en una pequeña mano.
+
+            Nota: Un enlace no tiene que ser texto. Un enlace puede ser una imagen o cualquier otro elemento HTML!
+        </pre>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <h2>Enlaces HTML - Sintaxis</h2>
+            <pre>   
+                La etiqueta HTML define un hipervínculo. Tiene la siguiente sintaxis:&lt;a&gt;
+                &lt;a href="url"&gt;link text&lt;/a&gt;
+
+                El atributo más importante del elemento es el atributo href, que indica el destino del enlace.&lt;a&gt;
+
+                El texto del enlace es la parte que será visible para el lector.
+                Al hacer clic en el texto del enlace, se enviará al lector a la dirección URL especificada.
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;body&gt;
+    
+                                &lt;h2>Este es un ejemplo de un link en HTML&lt;/h2&gt;
+        
+                                &lt;p&gt; &lt;a href="https://www.youtube.com/"&gt;Visita Youtube.com!&lt;/a&gt; &lt;/p&gt;
+    
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>     
+                    </td>
+                    <td>
+                        <h2>Este es un ejemplo de un link en HTML</h2>
+
+                        <p><a href="https://www.youtube.com/">Visita Youtube.com!</a></p>
+                    </td>
+                </tr>
+            </table>
+            <pre>
+                De forma predeterminada, los enlaces aparecerán de la siguiente manera en todos los navegadores:
+
+                Un enlace no visitado está subrayado y azul
+                Un enlace visitado está subrayado y morado
+                Un enlace activo está subrayado y en rojo
+            </pre>
+        </section>
+        <section style="text-align: justify;">
+            <h2>Enlaces HTML - Usar una imagen como enlace</h2>
+            <pre>   
+                Para usar una imagen como enlace, simplemente coloque la etiqueta 
+                dentro de la etiqueta:&lt;img&gt;&lt;a&gt;&lt;/a&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;a href="https://www.youtube.com/"&gt;&lt;img src="Youtube_logo.png" 
+                                style="width:42px;height:42px;"&gt;&lt;/a&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <a href="https://www.youtube.com/"><img src="Youtube_logo.png" 
+                        style="width:42px;height:42px;"></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>Botón como enlace</h2>
+            <pre>   
+                Para usar un botón HTML como enlace, debe agregar código JavaScript.
+
+                JavaScript le permite especificar lo que sucede en ciertos eventos, como un clic de un botón:
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td style="text-align: center;">
+                        <pre>
+                            &lt;p&gt;Haga clic en el botón para ir al menú de Formato de Texto&lt;/p&gt;
+
+                            &lt;button onclick="document.location='../FormatoDeTexto.html'"&gt;Tutorial HTML&lt;/button&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>Haga clic en el botón para ir al menú de Formato de Texto</p>
+
+                        <button onclick="document.location='../FormatoDeTexto.html'">Formato de Texto</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <br>
+    <a href="../FormatoDeTexto.html">Regresar</a>
+</body>
+</html>

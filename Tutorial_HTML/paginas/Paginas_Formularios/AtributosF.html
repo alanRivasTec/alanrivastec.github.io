@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Atributos de Formularios HTML</h1>
+    </header>
+    <nav>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <h2>El atributo Action</h2>
+            <pre>   
+                El atributo define la acción que se realizará cuando se envíe el formulario.action
+
+                Por lo general, los datos del formulario se envían a un archivo en el servidor cuando el 
+                usuario hace clic en el botón Enviar.
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>
+                            &lt;form action="prueba.html"&gt;
+                                &lt;label for="fname"&gt;Nombre:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="text" id="fname" name="fname" value="Alan"&gt;&lt;br&gt;
+                                &lt;label for="lname"&gt;Edad:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="number" id="lname" name="lname" value="12"&gt;&lt;br&gt;&lt;br&gt;
+                                &lt;input type="submit" value="Enviar"&gt;
+                            &lt;/form&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: justify;">
+                        <form action="prueba.html">
+                            <label for="fname">Nombre:</label><br>
+                            <input type="text" id="fname" name="fname" value="Alan"><br>
+                            <label for="lname">Edad:</label><br>
+                            <input type="number" id="lname" name="lname" value="12"><br><br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El atributo target</h2>
+            <pre>
+                El atributo especifica dónde Mostrar la respuesta que se recibe después de enviar el 
+                formulario.target
+
+                El atributo puede tener uno de los Valores siguientes:target
+
+                El valor predeterminado es lo que significa que La respuesta se abrirá en la ventana actual._self
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;p&gt;Al enviar este formulario, el resultado se abrirá en una nueva pestaña 
+                            del navegador: &lt;/p&gt;
+
+                            &lt;form action="prueba.html" target="_blank"&gt;
+                                &lt;label for="fname"&gt;Nombre: &lt;/label&gt; &lt;br&gt;
+                                &lt;input type="text" id="fname" name="fname" value="Juan"&gt; &lt;br&gt;
+                                &lt;label for="lname"&gt;Edad: &lt;/label&gt; &lt;br&gt;
+                                &lt;input type="number" id="lname" name="lname" value="34"&gt; &lt;br&gt; &lt;br&gt;
+                                &lt;input type="submit" value="Enviar"&gt;
+                            &lt;/form&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <p>Al enviar este formulario, el resultado se abrirá en una nueva pestaña del navegador:</p>
+
+                        <form action="prueba.html" target="_blank">
+                            <label for="fname">Nombre:</label><br>
+                            <input type="text" id="fname" name="fname" value="Juan"><br>
+                            <label for="lname">Edad:</label><br>
+                            <input type="number" id="lname" name="lname" value="34"><br><br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El atributo Method</h2>
+            <pre>
+                El atributo especifica el HTTP Método que se utilizará al enviar los datos del formulario.method
+
+                Notas sobre GET:
+
+                    * Anexa los datos del formulario a la dirección URL, en pares nombre/valor.
+                    * ¡NUNCA use GET para enviar datos confidenciales! (¡los datos del formulario enviado son 
+                    visibles en la URL!).
+                    * La longitud de una URL es limitada (2048 caracteres).
+                    * Útil para envíos de formularios en los que un usuario desea marcar el resultado.
+                    * GET es bueno para datos no seguros, como cadenas de consulta en Google.
+                
+                Notas sobre POST:
+
+                    * Anexa los datos del formulario dentro del cuerpo de la solicitud HTTP (el los datos del 
+                    formulario no se muestran en la dirección URL).
+                    * POST no tiene limitaciones de tamaño y se puede utilizar para enviar grandes 
+                    cantidades de datos.
+                    * Los envíos de formularios con POST no se pueden marcar como favoritos.
+            </pre>
+            <br>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;label&gt; </h2>
+            <pre>
+                La etiqueta define una etiqueta para muchos elementos de formulario.&lt;label&gt;
+
+                El elemento es útil para usuarios de lectores de pantalla, porque el lector de pantalla 
+                leerá en voz alta la etiqueta cuando El usuario se centra en el elemento de entrada.&lt;label&gt;
+            </pre>
+            <br>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El atributo Novalidate </h2>
+            <pre>
+                El atributo es un atributo booleano.novalidate
+
+                Cuando está presente, especifica que los datos del formulario (entrada) no deben 
+                validarse cuando se envían.
+
+                &lt;form action="/action_page.php" novalidate&gt;&lt;/form&gt;
+            </pre>
+        </section>
+    </article>
+    <br>
+    <a href="../Formularios.html">Regresar</a>
+</body>
+</html>

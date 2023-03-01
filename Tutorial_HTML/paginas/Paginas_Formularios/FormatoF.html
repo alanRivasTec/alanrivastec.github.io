@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Formularios HTML</h1>
+    </header>
+    <nav style="text-align: center;">
+        <pre>
+            Se utiliza un formulario HTML para recopilar la entrada del usuario. La entrada del usuario 
+            es La mayoría de las veces se envía a un servidor para su procesamiento.
+        </pre>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;forma&gt;</h2>
+            <pre>   
+                El elemento HTML se utiliza para crear un formulario HTML para la entrada 
+                del usuario:&lt;form&gt;
+
+                El elemento es un contenedor para diferentes tipos de elementos de entrada, tales como: 
+                campos de texto, casillas de verificación, radio botones, botones de envío, etc.&lt;form&gt;
+            </pre>
+            <br>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;input&gt;</h2>
+            <pre>
+                El elemento HTML es el más Elemento de formulario utilizado. &lt;input&gt;
+                
+                Un elemento se puede mostrar en de muchas maneras, dependiendo del atributo.&lt;input&gt;type
+
+                Tipo	                                     Descripción
+                &lt;input type="text"&gt;	Muestra un campo de entrada de texto de una sola línea
+                &lt;input type="radio"&gt;	Muestra un botón de opción (para seleccionar una de las muchas opciones)
+                &lt;input type="checkbox"&gt;	Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)
+                &lt;input type="submit"&gt;	Muestra un botón de envío (para enviar el formulario)
+                &lt;input type="button"&gt;	Muestra un botón en el que se puede hacer clic
+            </pre>
+        </section>
+        <section style="text-align: justify;">
+            <h2>Campos de texto</h2>
+            <pre>
+                El define un campo de entrada de una sola línea para Entrada de texto.&lt;input type="text"&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;form&gt;
+                                &lt;label for="fname"&gt;Nombre:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="text" id="fname" name="fname" value="Luis"&gt;&lt;br&gt;
+                                &lt;label for="lname"&gt;Edad:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="text" id="lname" name="lname" value="23"&gt;
+                            &lt;/form&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <form>
+                            <label for="fname">Nombre:</label><br>
+                            <input type="text" id="fname" name="fname" value="Luis"><br>
+                            <label for="lname">Edad:</label><br>
+                            <input type="text" id="lname" name="lname" value="23">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El elemento &lt;label&gt; </h2>
+            <pre>
+                La etiqueta define una etiqueta para muchos elementos de formulario.&lt;label&gt;
+
+                El elemento es útil para usuarios de lectores de pantalla, porque el lector de pantalla 
+                leerá en voz alta la etiqueta cuando El usuario se centra en el elemento de entrada.&lt;label&gt;
+            </pre>
+            <br>
+        </section>
+        <section style="text-align: justify;">
+            <h2>Botones de opción </h2>
+            <pre>
+                El define un botón de opción.&lt;input type="radio"&gt;
+
+                Los botones de opción permiten al usuario seleccionar UNA de un número limitado de opciones.
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;p&gt;Elige tu lenguaje de programación favorito:&lt;/p&gt;
+
+                            &lt;form&gt;
+                                &lt;input type="radio" id="html" name="fav_language" value="JAVA"&gt;
+                                &lt;label for="java"&gt;Java&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="radio" id="css" name="fav_language" value="PYTHON"&gt;
+                                &lt;label for="python"&gt;Python&lt;/label&gt;&lt;br&gt;
+                                &lt;input type="radio" id="javascript" name="fav_language" value="C"&gt;
+                                &lt;label for="c">C++&lt;/label&gt;
+                            &lt;/form&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <p>Elige tu lenguaje de programación favorito:</p>
+
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="JAVA">
+                            <label for="java">Java</label><br>
+                            <input type="radio" id="css" name="fav_language" value="PYTHON">
+                            <label for="python">Python</label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="C">
+                            <label for="c">C++</label>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>El botón Enviar </h2>
+            <pre>
+                El define un botón para enviar los datos del formulario a un controlador de 
+                formulario.&lt;input type="submit"&gt;
+
+                El controlador de formulario suele ser un archivo en el servidor con un script para procesar 
+                datos de entrada.
+
+                El controlador de formulario se especifica en el atributo del formulario.action
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;form action="prueba.html"&gt;
+                                &lt;label for="fname"&gt;Nombre: &lt;/label&gt; &lt;br&gt;
+                                &lt;input type="text" id="fname" name="fname" value="Enrique"&gt; &lt;br&gt;
+                                &lt;label for="lname"&gt;Edad: &lt;/label&gt; &lt;br&gt;
+                                &lt;input type="number" id="lname" name="lname" value="12"&gt; &lt;br&gt; &lt;br&gt;
+                                &lt;input type="submit" value="Enviar"&gt;
+                            &lt;/form&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <form action="prueba.html">
+                            <label for="fname">Nombre:</label><br>
+                            <input type="text" id="fname" name="fname" value="Enrique"><br>
+                            <label for="lname">Edad:</label><br>
+                            <input type="number" id="lname" name="lname" value="12"><br><br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <br>
+    <a href="../Formularios.html">Regresar</a>
+</body>
+</html>

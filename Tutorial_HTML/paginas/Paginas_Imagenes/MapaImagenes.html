@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Imágenes</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Mapas de imágenes HTML</h1>
+    </header>
+    <nav style="text-align: center;">
+        <pre>
+            Con los mapas de imágenes HTML, puede crear áreas en las que se puede hacer clic en una imagen.
+        </pre>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <h2>Mapas de imágenes</h2>
+            <pre>   
+                La etiqueta HTML define un mapa de imagen. Un mapa de imagen es una imagen con áreas en las 
+                que se puede hacer clic. Las áreas se definen con una o más etiquetas. &lt;map&gt;&lt;area&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <p style="text-align: center;">Intente hacer click en la taza o el télefono</p>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: center; width: 100%;">
+                    <td>
+                        <pre>
+                            &gt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+
+                            &gt;map name="workmap"&gt;
+                            &gt;area shape="rect" coords="34,44,270,350" alt="Computadora" href="computer.htm"&gt;
+                            &gt;area shape="rect" coords="290,172,333,250" alt="Celular" href="phone.htm"&gt;
+                            &gt;area shape="circle" coords="337,300,44" alt="Cafe" href="coffee.htm"&gt;
+                            &gt;/map&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+                        <map name="workmap">
+                            <area shape="rect" coords="34,44,270,350" alt="Computadora" href="Imagenes.html">
+                            <area shape="rect" coords="290,172,333,250" alt="Celular" href="Imagenes.html">
+                            <area shape="circle" coords="337,300,44" alt="Cafe" href="Imagenes.html">
+                        </map>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <br>
+    <a href="../Imagenes.html">Regresar</a>
+</body>
+</html>

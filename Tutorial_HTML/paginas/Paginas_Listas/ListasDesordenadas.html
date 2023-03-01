@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Listas HTML desordenadas</h1>
+    </header>
+    <nav style="text-align: center;">
+        <pre>
+            La etiqueta HTML define un desordenado Lista (con viñetas).&lt;ul&gt;
+        </pre>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <h2>Lista HTML desordenada </h2>
+            <pre>   
+                Una lista desordenada comienza con la etiqueta &lt;ul&gt;. Cada elemento de lista 
+                comienza con la etiqueta.&lt;li&gt;
+
+                Los elementos de la lista se marcarán con viñetas (pequeños círculos negros) de forma predeterminada:
+
+                La propiedad CSS se utiliza para definir el estilo de la Marcador de elemento de lista. 
+                Puede tener uno de los siguientes valores:list-style-type
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;ul style="list-style-type: circle;"&gt;
+                                &lt;li&gt;Motorola&lt;/li&gt;
+                                &lt;li&gt;Nokia&lt;/li&gt;
+                                &lt;li&gt;Xiaomi&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <ul style="list-style-type: circle;">
+                            <li>Motorola</li>
+                            <li>Nokia</li>
+                            <li>Xiaomi</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section style="text-align: justify;">
+            <h2>Lista HTML anidadas </h2>
+            <pre>   
+                Las listas se pueden anidar (lista dentro de la lista):
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;ul&gt;
+                                &lt;li&gt;Color&lt;/li&gt;
+                                &lt;li&gt;Tamaño
+                                    &lt;ul&gt;
+                                        &lt;li&gt;Chico&lt;/li&gt;
+                                        &lt;li&gt;Grande&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;Forma&gt;/li&gt;
+                            &lt;/ul&gt;
+                        </pre>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Color</li>
+                            <li>Tamaño
+                                <ul>
+                                    <li>Chico</li>
+                                    <li>Grande</li>
+                                </ul>
+                            </li>
+                            <li>Forma</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <br>
+    <a href="../Listas.html">Regresar</a>
+</body>
+</html>

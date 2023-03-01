@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio HTML</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Audio HTML</h1>
+    </header>
+    <nav style="text-align: center;">
+        <pre>
+            El elemento HTML se utiliza para Reproducir un archivo de audio en una página web.&lt;audio&Gt;
+        </pre>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <h2>El elemento HTML &lt;audio&gt; </h2>
+            <pre>   
+                Para reproducir un archivo de audio en HTML, utilice el elemento:&lt;audio&gt;
+
+                Cómo funciona
+
+                El atributo agrega controles de audio, como reproducir, pausar y volumen.controls
+
+                El elemento le permite especificar audio alternativo archivos entre los que el navegador 
+                puede elegir. El navegador utilizará el primer formato reconocido.&lt;source&gt;
+
+                El texto entre las etiquetas y solo se mostrará en navegadores que no lo hacen 
+                Apoyar el elemento.&lt;audio&gt;&lt;/audio&gt;&lt;audio&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;audio controls6Gt;
+                                &lt;source src="conjunto-primavera-la-celda-27.mp3" type="audio/mpeg"&gt;
+                                Tu navegador no soporta este elemento de audio.
+                            &lt;/audio&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <audio controls>
+                            <source src="conjunto-primavera-la-celda-27.mp3" type="audio/mpeg">
+                            Tu navegador no soporta este elemento de audio.
+                        </audio>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <br>
+    <a href="../Media.html">Regresar</a>
+</body>
+</html>

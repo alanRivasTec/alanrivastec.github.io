@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo HTML</title>
+</head>
+<body style="background-color:Gainsboro;">
+    <header style="text-align: center; background-color: DeepSkyBlue">
+        <h1>Vídeo HTML</h1>
+    </header>
+    <nav style="text-align: center;">
+        <pre>
+            El elemento HTML se utiliza para Mostrar un vídeo en una página web.&lt;video&Gt;
+        </pre>
+    </nav>
+    <hr>
+    <article>
+        <section style="text-align: justify;">
+            <pre>   
+                Para mostrar un vídeo en HTML, utilice el elemento:&lt;video&gt;&lt;/video&gt;
+
+                Cómo funciona
+                
+                El atributo agrega controles de vídeo, como reproducir, pausar y volumen.controls
+
+                Es una buena idea incluir siempre y atributos. Si no se establecen el alto y el ancho, 
+                la página puede parpadear mientras se carga el video.widthheight
+
+                El elemento le permite especificar video alternativo archivos entre los que el navegador puede 
+                elegir. El navegador utilizará el primer formato reconocido.&lt;source&gt;
+
+                El texto entre las etiquetas y solo se mostrará en navegadores que no lo hacen Apoyar el 
+                elemento.&lt;video&gt;&lt;/video&gt;&lt;video&gt;
+            </pre>
+            <br>
+            <h3 style="text-align: center;">Ejemplo</h3>
+            <table style="text-align: center; width: 100%;">
+                <tr>
+                    <th>Código</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr style="text-align: justify;">
+                    <td>
+                        <pre>
+                            &lt;video width="400" height="280" controls&gt;
+                                &lt;source src="video_PHURuQ7A.mp4" type="video/mp4"&gt;
+                                Tu navegador no soporta este formato de video.
+                            &lt;/video&gt;
+                        </pre>
+                    </td>
+                    <td style="text-align: center;">
+                        <video width="400" height="280" controls>
+                            <source src="video_PHURuQ7A.mp4" type="video/mp4">
+                            Tu navegador no soporta este formato de video.
+                        </video>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+    <br>
+    <a href="../Media.html">Regresar</a>
+</body>
+</html>
